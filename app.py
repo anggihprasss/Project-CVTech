@@ -63,7 +63,7 @@ def load_model():
 
 model = load_model()
 
-# convert image to base64 format
+# Fungsi untuk mengubah gambar ke base64
 def image_to_base64(image_path):
     try:
         with open(image_path, "rb") as image_file:
@@ -94,7 +94,7 @@ def get_caption_style():
     theme = st.get_option("theme.base")
     if theme == "dark":
         return "color: white;"
-    if theme == "light":
+    elif theme == "light":
         return "color: black;"
 
 caption_style = get_caption_style()
@@ -108,10 +108,7 @@ html_temp = f"""
     .center {{
         text-align: center;
     }}
-    .caption {{
-        color: white; /* Ubah warna teks caption menjadi putih */
-        font-size: 24px; /* Ubah ukuran font caption menjadi 20px */
-    }}
+    
     .container {{
         display: flex;
         justify-content: space-between; /* Membuat elemen berjajar secara horizontal */
@@ -149,13 +146,13 @@ elif app_mode == "Tim Pengembang":
     st.markdown("<h1 style='text-align: center;'>Anggota Tim</h1>", unsafe_allow_html=True)
     
     # Fungsi untuk menampilkan profil anggota
-    def show_profile(image_path, name, univ, role, github_link, linkedin_link, margin_top='10px'):
+    def show_profile(image_path, name, univ, role, github_link, linkedin_link, margin_top='5px'):
         st.markdown(f"""
         <div style="text-align: center; width: 200px; margin: 0 auto;">
-            <img src='data:image/png;base64,{image_to_base64(image_path)}' width='128' style='display: block; margin: {margin_top} auto 10px;'>
-            <div style='{caption_style}'>{name}</div>
+            <img src='data:image/png;base64,{image_to_base64(image_path)}' width='128' style='display: block; margin: {margin_top} auto 5px;'>
+            <div style='margin-bottom: 5px;'><span style='font-size: 18px;'>{name}</span></div>
             <div style='margin: 0 auto;'>
-                <p style='margin-top: 15px;'><strong></strong> {univ}</p>
+                <p style='margin-top: 2px; margin-bottom: 2px;'><strong></strong> {univ}</p>
                 <p><strong></strong> {role}</p>
                 <p>
                 <a href="{github_link}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" style="margin-right: 10px;"></a> 
