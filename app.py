@@ -1,5 +1,5 @@
 '''
-    Contoh Deloyment untuk Domain Computer Vision (CV)
+    Deployment CVTech
     Orbit Future Academy - AI Jobs - MBKM Batch 6
     Tim Deployment
     2024
@@ -127,11 +127,11 @@ html_temp = f"""
 # Tampilkan HTML di Streamlit
 st.markdown(html_temp, unsafe_allow_html=True)
 
-# Function to display copyright text
+# Untuk menampilkan teks copyright
 def display_copyright():
     st.markdown(
         """
-        <div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
+        <div style="position: fixed; bottom: 10px; width: 50%; text-align: center; font-size: 12px; color: #888;">
             Team 1 &copy; CVtech 2024
         </div>
         """,
