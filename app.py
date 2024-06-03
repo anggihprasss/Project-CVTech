@@ -198,7 +198,7 @@ if app_mode == "Tentang Aplikasi":
         st.markdown(f"""
         <div class="image-container">
             <img src='data:image/png;base64,{image_to_base64("images/aman.png")}' alt='AMAN' width='150' style='display: block; margin: 5px auto;'>
-            <div class="caption">Privasi dan perlindungan informasi Anda adalah prioritas utama kami.</div>
+            <div class="caption">Privasi dan perlindungan informasi Anda adalah prioritas utama.</div>
         </div>
         """, unsafe_allow_html=True)
         
@@ -214,7 +214,7 @@ if app_mode == "Tentang Aplikasi":
         st.markdown(f"""
         <div class="image-container">
             <img src='data:image/png;base64,{image_to_base64("images/mudah.png")}' alt='MUDAH' width='150' style='display: block; margin: 5px auto;'>
-            <div class="caption">Dapat digunakan kapan saja dan dimana saja.
+            <div class="caption">Mudah dan dapat digunakan kapan saja dan dimana saja.
             </div>
         </div>
         """, unsafe_allow_html=True)
