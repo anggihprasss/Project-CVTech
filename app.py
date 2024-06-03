@@ -127,11 +127,25 @@ html_temp = f"""
 # Tampilkan HTML di Streamlit
 st.markdown(html_temp, unsafe_allow_html=True)
 
-# Untuk menampilkan teks copyright
+# Menampilkan text copyright
 def display_copyright():
+    theme = st.get_option("theme.base")
+    if theme == "dark":
+        text_color = "white"
+    elif theme == "light":
+        text_color = "black"
+
     st.markdown(
         """
-        <div style="position: fixed; bottom: 10px; width: 50%; text-align: center; font-size: 12px; color: #888;">
+        <div style="position: fixed; bottom: 10px; left: 10px; text-align: center; font-size: 12px; {text_color};">
+            Team 1 &copy; CVtech 2024
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    st.sidebar.markdown(
+        """
+        <div style="position: fixed; bottom: 10px; left: 10px; text-align: center; font-size: 12px; color: {text_color};">
             Team 1 &copy; CVtech 2024
         </div>
         """,
