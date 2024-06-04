@@ -1,5 +1,5 @@
 '''
-    Deployment CVTech
+    Deployment Project CVTech
     Orbit Future Academy - AI Jobs - MBKM Batch 6
     Tim Deployment
     2024
@@ -26,8 +26,6 @@ class_explanations={
         "1. Rotasi Tanaman: Praktik rotasi tanaman dapat membantu mengurangi risiko infeksi Blight. Dengan merotasi tanaman secara berkala, Anda dapat mengurangi jumlah patogen Blight yang bertahan di tanah.",
         "2. Pemilihan Varietas Tahan Penyakit: Memilih varietas jagung yang tahan terhadap Blight dapat membantu mengurangi risiko infeksi. Konsultasikan dengan penjual benih atau katalog varietas untuk mencari varietas yang memiliki ketahanan terhadap penyakit ini.",
         "3. Pengaturan Jarak Tanam: Menjaga jarak yang cukup antara tanaman jagung dapat membantu meningkatkan sirkulasi udara di antara tanaman, mengurangi kelembaban, dan mengurangi risiko penyebaran Blight.",
-        "4. Pengendalian Hama Penghambat: Beberapa hama seperti kutu daun atau ulat daun dapat melemahkan tanaman jagung, membuatnya lebih rentan terhadap infeksi Blight. Pengendalian hama ini dapat membantu menjaga kesehatan tanaman dan mengurangi risiko infeksi tambahan.",
-        "5. Penggunaan Fungisida: Penggunaan fungisida dapat menjadi pilihan terakhir jika infeksi Blight sudah parah. Konsultasikan dengan ahli pertanian lokal atau petani lainnya untuk rekomendasi fungisida yang tepat dan cara aplikasinya.",
         "<a href='https://plantix.net/id/library/plant-diseases/100161/southern-leaf-blight-of-maize/'>Klik untuk informasi selanjutnya..."
     ],
     'Common Rust (Karatan Umum)': [
@@ -36,8 +34,6 @@ class_explanations={
         "1. Pilih Varietas Tahan Penyakit: Tanam varietas jagung yang memiliki ketahanan terhadap Common Rust. Banyak benih jagung modern telah dikembangkan untuk memiliki resistensi terhadap berbagai penyakit, termasuk Common Rust.",
         "2. Rotasi Tanaman: Lakukan rotasi tanaman dengan menanam tanaman selain jagung di lahan yang sama setiap tahun. Rotasi tanaman membantu mengurangi populasi patogen di tanah yang bisa menyebabkan infeksi pada musim berikutnya.",
         "3. Pemantauan Rutin: Pantau tanaman jagung secara rutin untuk mendeteksi gejala awal Common Rust. Identifikasi dan tangani infeksi sedini mungkin untuk mencegah penyebaran lebih lanjut.",
-        "4. Penggunaan Fungisida: Aplikasikan fungisida yang efektif terhadap Common Rust sesuai dengan petunjuk yang tertera pada label produk. Fungisida dapat membantu mengontrol penyebaran penyakit jika diterapkan pada tahap awal infeksi atau sebagai tindakan pencegahan.",
-        "5. Pengelolaan Tanaman dan Lingkungan: Pastikan tanaman mendapatkan nutrisi yang cukup dan air yang memadai, serta pertahankan jarak tanam yang cukup untuk memastikan sirkulasi udara yang baik. Lingkungan yang sehat dan sirkulasi udara yang baik dapat mengurangi kelembaban yang berlebihan dan menghambat perkembangan jamur.",
         "<a href='https://plantix.net/id/library/plant-diseases/100082/common-rust-of-maize/'>Klik untuk informasi selanjutnya..."
     ],
     'Gray Leaf Spot (Bercak Daun Abu-abu)': [
@@ -46,8 +42,6 @@ class_explanations={
         "1. Rotasi Tanaman: Lakukan rotasi tanaman dengan menanam tanaman selain jagung di lahan yang sama pada musim berikutnya untuk memutus siklus hidup patogen penyebab Gray Leaf Spot dan mengurangi inokulum patogen di tanah.",
         "2. Penggunaan Varietas Tahan Penyakit: Pilih dan tanam varietas jagung yang memiliki resistensi terhadap Gray Leaf Spot, sehingga varietas tahan penyakit memiliki daya tahan lebih baik terhadap infeksi dan mengurangi keparahan penyakit serta kerugian hasil panen.",
         "3. Sanitasi Lahan: Bersihkan sisa-sisa tanaman yang terinfeksi setelah panen dan musnahkan dengan cara dibakar atau dikubur untuk mengurangi sumber inokulum patogen di lapangan dan mengurangi kemungkinan infeksi di musim tanam berikutnya.",
-        "4. Pengelolaan Air yang Baik: Pastikan sistem irigasi yang baik dan hindari penyiraman berlebihan yang dapat meningkatkan kelembaban daun, sehingga mengurangi kelembaban yang mendukung perkembangan jamur penyebab Gray Leaf Spot.",
-        "5. Aplikasi Fungisida: Gunakan fungisida yang efektif melawan patogen penyebab Gray Leaf Spot sesuai dengan rekomendasi dan petunjuk penggunaan untuk mengendalikan penyebaran infeksi pada tanaman yang sudah terinfeksi dan melindungi tanaman yang sehat.",
         "<a href='https://plantix.net/id/library/plant-diseases/100107/grey-leaf-spot-of-maize/'>Klik untuk informasi selanjutnya..."
     ],
     'Sehat': [
@@ -110,11 +104,11 @@ html_temp = f"""
     
     .container {{
         display: flex;
-        justify-content: space-between; /* Membuat elemen berjajar secara horizontal */
-        align-items: center; /* Pusatkan elemen secara vertikal */
+        justify-content: space-between;
+        align-items: center;
         background-color:#228B22;
         padding: 5px;
-        border-radius: 30px; /* Membuat sudut background */
+        border-radius: 30px;
     }}
     </style>
     <div class="container">
@@ -138,7 +132,7 @@ def display_copyright():
     st.markdown(
         """
         <div style="position: fixed; bottom: 10px; left: 10px; text-align: center; font-size: 12px; {text_color};">
-            Team 1 &copy; CVTech 2024
+            Team 1 &copy; CVtech 2024
         </div>
         """,
         unsafe_allow_html=True
@@ -146,7 +140,7 @@ def display_copyright():
     st.sidebar.markdown(
         """
         <div style="position: fixed; bottom: 10px; left: 10px; text-align: center; font-size: 12px; color: {text_color};">
-            Team 1 &copy; CVTech 2024
+            Team 1 &copy; CVtech 2024
         </div>
         """,
         unsafe_allow_html=True
@@ -214,7 +208,7 @@ if app_mode == "Tentang Aplikasi":
         st.markdown(f"""
         <div class="image-container">
             <img src='data:image/png;base64,{image_to_base64("images/mudah.png")}' alt='MUDAH' width='150' style='display: block; margin: 5px auto;'>
-            <div class="caption">Mudah dan dapat digunakan kapan saja dan dimana saja.
+            <div class="caption">Dapat digunakan kapan saja dan dimana saja.
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -224,25 +218,54 @@ if app_mode == "Tentang Aplikasi":
 # Tim Pengembang
 elif app_mode == "Tim Pengembang":
     st.markdown("<h1 style='text-align: center;'>Anggota Tim</h1>", unsafe_allow_html=True)
+    st.markdown("""
+    <style>
+    .image-container {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .profile-content img {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .profile-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
     
     # Fungsi untuk menampilkan profil anggota
-    def show_profile(image_path, name, univ, role, github_link, linkedin_link, margin_top='5px'):
+    def show_profile(image_path, name, univ, role, github_link, linkedin_link):
         st.markdown(f"""
-        <div style="text-align: center; width: 250px; margin: 0 auto;">
-            <img src='data:image/png;base64,{image_to_base64(image_path)}' width='150' style='display: block; margin: {margin_top} auto 5px;'>
-            <div style='margin-bottom: -3px;'><span style='font-size: 16px;'>{name}</span></div>
-            <div style='margin: 0 auto;'>
-                <p style='margin-top: 0px; margin-bottom: -3px; font-size: 13px;'><strong></strong> {univ}</p>
-                <p style='margin-top: 0px; margin-bottom: 1px; font-size: 13px;''><strong></strong> {role}</p>
-                <p>
-                <a href="{github_link}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="25" style="margin-right: 10px;"></a> 
-                <a href="{linkedin_link}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="25"></a>
-                </p>
+        <div class="image-container">
+            <div class="profile-content">
+                <img src='data:image/png;base64,{image_to_base64(image_path)}' width='150'>
+                <div><span style='font-size: 16px;'>{name}</span></div>
+                <div>
+                    <p style='margin: 0; font-size: 13px;'>{univ}</p>
+                    <p style='margin: 0; font-size: 13px;'>{role}</p>
+                </div>
+                <div class="profile-links">
+                    <a href="{github_link}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="25"></a> 
+                    <a href="{linkedin_link}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="25"></a>
+                </div>
             </div>
         </div>
         """, unsafe_allow_html=True)
     
-    # Membuat kolom untuk setiap anggota tim
+    # Menampilkan profile untuk setiap anggota tim
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
