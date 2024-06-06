@@ -299,15 +299,13 @@ elif app_mode == "Sistem Prediksi":
         image = Image.open(file)
         st.image(image, width=300)
         if st.button("Prediksi"):
-            with st.spinner('Sedang memproses...'):
-                time.sleep(3)
-                predictions = import_and_predict(image, model)
-                score = np.array(predictions[0])
-                predicted_class = class_names[np.argmax(score)]
-                st.title("Sistem memprediksi jagung dalam kondisi {}".format(predicted_class))
-                st.write("Penjelasan:")
-                explanation_html = "<div class='justified'>"
-                for point in class_explanations[predicted_class]:
-                    explanation_html += "<p>{}</p>".format(point)
-                explanation_html += "</div>"
-                st.markdown(explanation_html, unsafe_allow_html=True)
+            predictions = import_and_predict(image, model)
+            score = np.array(predictions[0])
+            predicted_class = class_names[np.argmax(score)]
+            st.title("Sistem memprediksi jagung dalam kondisi {}".format(predicted_class))
+            st.write("Penjelasan:")
+            explanation_html = "<div class='justified'>"
+            for point in class_explanations[predicted_class]:
+                explanation_html += "<p>{}</p>".format(point)
+            explanation_html += "</div>"
+            st.markdown(explanation_html, unsafe_allow_html=True)
