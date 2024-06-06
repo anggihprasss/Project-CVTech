@@ -7,7 +7,7 @@ pip install -r requirements.txt
 ## Jalankan Streamlit
 streamlit run app.py
 
-
+## Hasil/Output proyek
 github repository: https://github.com/anggihprasss/Project-CVTech
 
 hasil deployment: http://cornvision-technology.streamlit.app
