@@ -10,4 +10,4 @@ streamlit run app.py
 
 github repository: https://github.com/anggihprasss/Project-CVTech
 
-hasil deployment: cornvision-technology.streamlit.app
+hasil deployment: http://cornvision-technology.streamlit.app
