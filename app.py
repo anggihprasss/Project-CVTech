@@ -269,7 +269,7 @@ elif app_mode == "Tim Pengembang":
     with col3:
         show_profile('images/photo_anggota3.png', 'Muhammad Raihan', 'Institut Teknik Garut', 'Full Stack Developer', 'https://github.com/Reyourbae', 'https://www.linkedin.com/in/muhammad-raihan-6680112a3/')
     with col4:
-        show_profile('images/photo_anggota4.png', 'Nabila Fitriyani', 'Universitas Mayasari Bakti', 'Project Manager', 'https://github.com/nbilaft', 'https://www.linkedin.com/')
+        show_profile('images/photo_anggota4.png', 'Nabila Fitriyani', 'Universitas Mayasari Bakti', 'Project Manager', 'https://github.com/nbilaft', 'https://www.linkedin.com/in/nabilafitriyani/')
 
 
 # Sistem Deteksi
