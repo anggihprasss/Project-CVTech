@@ -16,6 +16,7 @@ import time
 import os
 import base64
 
+st.set_page_config(page_title="CVTech")
 
 # Class names dan explanation
 class_names=['Blight', 'Common Rust (Karatan Umum)', 'Gray Leaf Spot (Bercak Daun Abu-abu)', 'Sehat']
