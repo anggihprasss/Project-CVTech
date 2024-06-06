@@ -123,6 +123,10 @@ html_temp = f"""
 # Tampilkan HTML di Streamlit
 st.markdown(html_temp, unsafe_allow_html=True)
 
+# Sidebar
+st.sidebar.title("CVTech Application")
+app_mode = st.sidebar.selectbox("Pilihan", ["Halaman Depan", "Tentang Aplikasi", "Tim Pengembang", "Sistem Prediksi"])
+
 # Menampilkan text copyright
 def display_copyright():
     theme = st.get_option("theme.base")
@@ -142,10 +146,6 @@ def display_copyright():
 
 # Display copyright text
 display_copyright()
-
-# Sidebar
-st.sidebar.title("CVTech Application")
-app_mode = st.sidebar.selectbox("Pilihan", ["Halaman Depan", "Tentang Aplikasi", "Tim Pengembang", "Sistem Prediksi"])
 
 # Halaman Depan
 if app_mode == "Halaman Depan":
