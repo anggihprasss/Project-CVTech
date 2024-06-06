@@ -131,14 +131,6 @@ def display_copyright():
     elif theme == "light":
         text_color = "black"
 
-    st.markdown(
-        """
-        <div style="position: fixed; bottom: 10px; left: 10px; text-align: center; font-size: 12px; {text_color};">
-            Team 1 &copy; CVTech 2024
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
     st.sidebar.markdown(
         """
         <div style="position: fixed; bottom: 10px; left: 10px; text-align: center; font-size: 12px; color: {text_color};">
