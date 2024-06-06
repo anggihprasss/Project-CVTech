@@ -16,6 +16,7 @@ import time
 import os
 import base64
 
+# Judul Web page
 st.set_page_config(page_title="CVTech")
 
 # Class names dan explanation
