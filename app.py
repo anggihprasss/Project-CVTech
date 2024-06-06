@@ -142,7 +142,7 @@ def display_copyright():
     st.sidebar.markdown(
         """
         <div style="position: fixed; bottom: 10px; left: 10px; text-align: center; font-size: 12px; color: {text_color};">
-            Team 1 &copy; CVtech 2024
+            Team 1 &copy; CVTech 2024
         </div>
         """,
         unsafe_allow_html=True
