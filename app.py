@@ -129,7 +129,7 @@ st.markdown(html_temp, unsafe_allow_html=True)
 # Sidebar
 with st.sidebar:
     selected = option_menu(
-        menu_title="Select Menu",
+        menu_title="Select",
         options=["Home", "Team", "Predict"],
         icons=["house", "people", "activity"],
         menu_icon="list-task",
