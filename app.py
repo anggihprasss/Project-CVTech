@@ -131,8 +131,8 @@ with st.sidebar:
     selected = option_menu(
         menu_title="Select Menu",
         options=["Home", "Team", "Predict"],
-        icons=["house", "people", "search"],
-        menu_icon="folder-fill",
+        icons=["house", "people", "activity"],
+        menu_icon=""list-task",
         default_index=0,
         styles={
             "container": {"padding": "5px 10px"},
