@@ -132,7 +132,7 @@ with st.sidebar:
         menu_title="Select Menu",
         options=["Home", "Team", "Predict"],
         icons=["house", "people", "activity"],
-        menu_icon=""list-task",
+        menu_icon="list-task",
         default_index=0,
         styles={
             "container": {"padding": "5px 10px"},
