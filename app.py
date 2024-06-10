@@ -129,11 +129,23 @@ st.markdown(html_temp, unsafe_allow_html=True)
 # Sidebar
 with st.sidebar:
     selected = option_menu(
-        menu_title="Pilih",
+        menu_title="Select Menu",
         options=["Home", "Team", "Predict"],
         icons=["house", "people", "search"],
         menu_icon="folder-fill",
         default_index=0,
+        styles={
+            "container": {"padding": "5px 10px"},
+            "icon": {"color": "white", "font-size": "15px"},
+            "nav-link": {
+                "font-size": "15px",
+                "text-align": "left",
+                "margin": "0px",
+                "color": "white",
+                "--hover-color": "#eee",
+            },
+            "nav-link-selected": {"background-color": "#228B22", "color": "white"},  # Mengubah warna background dan font
+        }
     )
 
 # Menampilkan text copyright
