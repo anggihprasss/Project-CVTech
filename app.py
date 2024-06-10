@@ -18,7 +18,7 @@ import base64
 from streamlit_option_menu import option_menu
 
 # Judul Web page
-st.set_page_config(page_title="CVTech")
+st.set_page_config(page_title="CVTech", page_icon="🌽")
 
 # Class names dan explanation
 class_names=['Blight', 'Common Rust', 'Gray Leaf Spot', 'Sehat']
