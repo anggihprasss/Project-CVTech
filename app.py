@@ -15,12 +15,13 @@ import cv2
 import time
 import os
 import base64
+from streamlit_option_menu import option_menu
 
 # Judul Web page
 st.set_page_config(page_title="CVTech")
 
 # Class names dan explanation
-class_names=['Blight', 'Common Rust (Karatan Umum)', 'Gray Leaf Spot (Bercak Daun Abu-abu)', 'Sehat']
+class_names=['Blight', 'Common Rust', 'Gray Leaf Spot', 'Sehat']
 class_explanations={
     'Blight': [
         "Blight adalah penyakit yang disebabkan oleh jamur atau bakteri. Penyakit ini biasanya menyebabkan daun-daun tanaman jagung menjadi layu, berubah warna menjadi coklat atau hitam, dan kemudian mati. Blight dapat menyebar dengan cepat, terutama dalam kondisi lembab.",
@@ -30,17 +31,17 @@ class_explanations={
         "3. Pengaturan Jarak Tanam: Menjaga jarak yang cukup antara tanaman jagung dapat membantu meningkatkan sirkulasi udara di antara tanaman, mengurangi kelembaban, dan mengurangi risiko penyebaran Blight.",
         "<a href='https://plantix.net/id/library/plant-diseases/100161/southern-leaf-blight-of-maize/'>Klik untuk informasi selanjutnya..."
     ],
-    'Common Rust (Karatan Umum)': [
+    'Common Rust': [
         "Common Rust (Karatan Umum) adalah penyakit jamur yang biasanya ditemukan pada daun-daun tanaman jagung. Gejalanya termasuk munculnya bercak-bercak berwarna oranye atau coklat pada daun jagung. Penyakit ini dapat menyebabkan penurunan produksi jika tidak diatasi dengan tepat.",
-        "Menangani Common Rust (Karatan Umum) pada tanaman jagung dapat dilakukan dengan beberapa langkah pencegahan dan pengendalian. Berikut adalah beberapa langkah efektif yang dapat diambil:",
+        "Menangani Common Rust (Karatan Umum) pada tanaman jagung dapat dilakukan dengan beberapa langkah pencegahan dan pengendalian. Berikut adalah lima langkah efektif yang dapat diambil:",
         "1. Pilih Varietas Tahan Penyakit: Tanam varietas jagung yang memiliki ketahanan terhadap Common Rust. Banyak benih jagung modern telah dikembangkan untuk memiliki resistensi terhadap berbagai penyakit, termasuk Common Rust.",
         "2. Rotasi Tanaman: Lakukan rotasi tanaman dengan menanam tanaman selain jagung di lahan yang sama setiap tahun. Rotasi tanaman membantu mengurangi populasi patogen di tanah yang bisa menyebabkan infeksi pada musim berikutnya.",
         "3. Pemantauan Rutin: Pantau tanaman jagung secara rutin untuk mendeteksi gejala awal Common Rust. Identifikasi dan tangani infeksi sedini mungkin untuk mencegah penyebaran lebih lanjut.",
         "<a href='https://plantix.net/id/library/plant-diseases/100082/common-rust-of-maize/'>Klik untuk informasi selanjutnya..."
     ],
-    'Gray Leaf Spot (Bercak Daun Abu-abu)': [
+    'Gray Leaf Spot': [
         "Gray Leaf Spot disebabkan oleh jamur yang menginfeksi daun-daun tanaman jagung. Gejalanya berupa bercak-bercak abu-abu atau coklat kecil yang muncul di daun. Jika tidak dikendalikan, penyakit ini dapat menyebabkan penurunan hasil panen yang signifikan.",
-        "Mengatasi Gray Leaf Spot (Bercak Daun Abu-abu) pada tanaman jagung melibatkan beberapa langkah pengendalian yang efektif. Berikut adalah beberapa langkah utama untuk menangani penyakit ini:",
+        "Mengatasi Gray Leaf Spot (Bercak Daun Abu-abu) pada tanaman jagung melibatkan beberapa langkah pengendalian yang efektif. Berikut adalah lima langkah utama untuk menangani penyakit ini:",
         "1. Rotasi Tanaman: Lakukan rotasi tanaman dengan menanam tanaman selain jagung di lahan yang sama pada musim berikutnya untuk memutus siklus hidup patogen penyebab Gray Leaf Spot dan mengurangi inokulum patogen di tanah.",
         "2. Penggunaan Varietas Tahan Penyakit: Pilih dan tanam varietas jagung yang memiliki resistensi terhadap Gray Leaf Spot, sehingga varietas tahan penyakit memiliki daya tahan lebih baik terhadap infeksi dan mengurangi keparahan penyakit serta kerugian hasil panen.",
         "3. Sanitasi Lahan: Bersihkan sisa-sisa tanaman yang terinfeksi setelah panen dan musnahkan dengan cara dibakar atau dikubur untuk mengurangi sumber inokulum patogen di lapangan dan mengurangi kemungkinan infeksi di musim tanam berikutnya.",
@@ -123,9 +124,17 @@ html_temp = f"""
 # Tampilkan HTML di Streamlit
 st.markdown(html_temp, unsafe_allow_html=True)
 
+
+
 # Sidebar
-st.sidebar.title("CVTech Application")
-app_mode = st.sidebar.selectbox("Pilihan", ["Halaman Depan", "Tentang Aplikasi", "Tim Pengembang", "Sistem Prediksi"])
+with st.sidebar:
+    selected = option_menu(
+        menu_title="Pilih",
+        options=["Home", "Team", "Predict"],
+        icons=["house", "people", "search"],
+        menu_icon="folder-fill",
+        default_index=0,
+    )
 
 # Menampilkan text copyright
 def display_copyright():
@@ -138,7 +147,7 @@ def display_copyright():
     st.sidebar.markdown(
         """
         <div style="position: fixed; bottom: 10px; left: 10px; text-align: center; font-size: 12px; color: {text_color};">
-            Team 1 &copy; CVTech 2024
+            Team 1 &copy;CVTech 2024
         </div>
         """,
         unsafe_allow_html=True
@@ -148,16 +157,16 @@ def display_copyright():
 display_copyright()
 
 # Halaman Depan
-if app_mode == "Halaman Depan":
+if selected == "Home":
     st.markdown("""
     <h2 style="text-align: center; font-size: 32px;">Corn Vision Technology: Deteksi Dini, Panen Pasti!</h2>
     <div style="text-align: justify; font-size: 18px;">
     Pertanian merupakan tulang punggung bagi pemenuhan kebutuhan pangan global, namun petani sering kali dihadapkan pada tantangan yang kompleks. Tanaman jagung, salah satu tanaman pangan utama, tidak luput dari berbagai ancaman penyakit dan gangguan yang dapat mengancam hasil panen. Untuk mengatasi masalah ini, CVTech hadir sebagai solusi terdepan dengan menggunakan teknologi terkini dalam bidang Computer Vision.
     </div>
     """, unsafe_allow_html=True)
-
-# Tentang Aplikasi
-if app_mode == "Tentang Aplikasi":
+    st.markdown("<br><br>", unsafe_allow_html=True)
+    
+    # Tentang Aplikasi
     st.markdown("""
     <h2 style="text-align: center; font-size: 32px;">Tentang Aplikasi</h2>
     <div style="text-align: center; font-size: 15px;">
@@ -210,7 +219,7 @@ if app_mode == "Tentang Aplikasi":
 
 
 # Tim Pengembang
-elif app_mode == "Tim Pengembang":
+if selected == "Team":
     st.markdown("<h1 style='text-align: center;'>Anggota Tim</h1>", unsafe_allow_html=True)
     st.markdown("""
     <style>
@@ -273,7 +282,7 @@ elif app_mode == "Tim Pengembang":
 
 
 # Sistem Deteksi
-elif app_mode == "Sistem Prediksi":
+elif selected == "Predict":
     st.markdown("<h1 style='text-align: center;'>Sistem Prediksi Penyakit Jagung</h1>", unsafe_allow_html=True)
     file = st.file_uploader("",type=["jpg", "jpeg", "png"])
     st.set_option('deprecation.showfileUploaderEncoding', False)
@@ -296,6 +305,9 @@ elif app_mode == "Sistem Prediksi":
             predictions = import_and_predict(image, model)
             score = np.array(predictions[0])
             predicted_class = class_names[np.argmax(score)]
+            prediction_score = np.max(score) * 100
+            st.write("## {}".format(predicted_class))
+            st.write("### Prediksi Score: {:.1f}%".format(prediction_score))
             st.title("Sistem memprediksi jagung dalam kondisi {}".format(predicted_class))
             st.write("Penjelasan:")
             explanation_html = "<div class='justified'>"
