@@ -17,6 +17,21 @@ import os
 import base64
 from streamlit_option_menu import option_menu
 
+
+# Google Analytics tracking code
+google_analytics_js = """
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2M8FSD72S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F2M8FSD72S');
+</script>
+"""
+st.markdown(google_analytics_js, unsafe_allow_html=True)
+
 # Judul Web page
 st.set_page_config(page_title="CVTech", page_icon="🌽")
 
