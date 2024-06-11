@@ -37,7 +37,7 @@ class_explanations={
         "1. Pilih Varietas Tahan Penyakit: Tanam varietas jagung yang memiliki ketahanan terhadap Common Rust. Banyak benih jagung modern telah dikembangkan untuk memiliki resistensi terhadap berbagai penyakit, termasuk Common Rust.",
         "2. Rotasi Tanaman: Lakukan rotasi tanaman dengan menanam tanaman selain jagung di lahan yang sama setiap tahun. Rotasi tanaman membantu mengurangi populasi patogen di tanah yang bisa menyebabkan infeksi pada musim berikutnya.",
         "3. Pemantauan Rutin: Pantau tanaman jagung secara rutin untuk mendeteksi gejala awal Common Rust. Identifikasi dan tangani infeksi sedini mungkin untuk mencegah penyebaran lebih lanjut.",
-        "<a href='https://plantix.net/id/library/plant-diseases/100082/common-rust-of-maize/'style='font-size: 20px; text-decoration: none;>Klik untuk informasi selanjutnya</a>🍃🍃🍃"
+        "<a href='https://plantix.net/id/library/plant-diseases/100082/common-rust-of-maize/'style='font-size: 20px; text-decoration: none;'>Klik untuk informasi selanjutnya</a>🍃🍃🍃"
     ],
     'Gray Leaf Spot': [
         "Gray Leaf Spot disebabkan oleh jamur yang menginfeksi daun-daun tanaman jagung. Gejalanya berupa bercak-bercak abu-abu atau coklat kecil yang muncul di daun. Jika tidak dikendalikan, penyakit ini dapat menyebabkan penurunan hasil panen yang signifikan.",
