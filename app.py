@@ -29,7 +29,7 @@ class_explanations={
         "1. Rotasi Tanaman: Praktik rotasi tanaman dapat membantu mengurangi risiko infeksi Blight. Dengan merotasi tanaman secara berkala, Anda dapat mengurangi jumlah patogen Blight yang bertahan di tanah.",
         "2. Pemilihan Varietas Tahan Penyakit: Memilih varietas jagung yang tahan terhadap Blight dapat membantu mengurangi risiko infeksi. Konsultasikan dengan penjual benih atau katalog varietas untuk mencari varietas yang memiliki ketahanan terhadap penyakit ini.",
         "3. Pengaturan Jarak Tanam: Menjaga jarak yang cukup antara tanaman jagung dapat membantu meningkatkan sirkulasi udara di antara tanaman, mengurangi kelembaban, dan mengurangi risiko penyebaran Blight.",
-        "<a href='https://plantix.net/id/library/plant-diseases/100161/southern-leaf-blight-of-maize/'style='font-size: 20px;'>Klik untuk informasi selanjutnya</a>🍃🍃🍃"
+        "<a href='https://plantix.net/id/library/plant-diseases/100161/southern-leaf-blight-of-maize/'style='font-size: 20px; text-decoration: none;'>Klik untuk informasi selanjutnya</a>🍃🍃🍃"
     ],
     'Common Rust': [
         "Common Rust (Karatan Umum) adalah penyakit jamur yang biasanya ditemukan pada daun-daun tanaman jagung. Gejalanya termasuk munculnya bercak-bercak berwarna oranye atau coklat pada daun jagung. Penyakit ini dapat menyebabkan penurunan produksi jika tidak diatasi dengan tepat.",
@@ -37,7 +37,7 @@ class_explanations={
         "1. Pilih Varietas Tahan Penyakit: Tanam varietas jagung yang memiliki ketahanan terhadap Common Rust. Banyak benih jagung modern telah dikembangkan untuk memiliki resistensi terhadap berbagai penyakit, termasuk Common Rust.",
         "2. Rotasi Tanaman: Lakukan rotasi tanaman dengan menanam tanaman selain jagung di lahan yang sama setiap tahun. Rotasi tanaman membantu mengurangi populasi patogen di tanah yang bisa menyebabkan infeksi pada musim berikutnya.",
         "3. Pemantauan Rutin: Pantau tanaman jagung secara rutin untuk mendeteksi gejala awal Common Rust. Identifikasi dan tangani infeksi sedini mungkin untuk mencegah penyebaran lebih lanjut.",
-        "<a href='https://plantix.net/id/library/plant-diseases/100082/common-rust-of-maize/'style='font-size: 20px;'>Klik untuk informasi selanjutnya</a>🍃🍃🍃"
+        "<a href='https://plantix.net/id/library/plant-diseases/100082/common-rust-of-maize/'style='font-size: 20px; text-decoration: none;>Klik untuk informasi selanjutnya</a>🍃🍃🍃"
     ],
     'Gray Leaf Spot': [
         "Gray Leaf Spot disebabkan oleh jamur yang menginfeksi daun-daun tanaman jagung. Gejalanya berupa bercak-bercak abu-abu atau coklat kecil yang muncul di daun. Jika tidak dikendalikan, penyakit ini dapat menyebabkan penurunan hasil panen yang signifikan.",
@@ -45,7 +45,7 @@ class_explanations={
         "1. Rotasi Tanaman: Lakukan rotasi tanaman dengan menanam tanaman selain jagung di lahan yang sama pada musim berikutnya untuk memutus siklus hidup patogen penyebab Gray Leaf Spot dan mengurangi inokulum patogen di tanah.",
         "2. Penggunaan Varietas Tahan Penyakit: Pilih dan tanam varietas jagung yang memiliki resistensi terhadap Gray Leaf Spot, sehingga varietas tahan penyakit memiliki daya tahan lebih baik terhadap infeksi dan mengurangi keparahan penyakit serta kerugian hasil panen.",
         "3. Sanitasi Lahan: Bersihkan sisa-sisa tanaman yang terinfeksi setelah panen dan musnahkan dengan cara dibakar atau dikubur untuk mengurangi sumber inokulum patogen di lapangan dan mengurangi kemungkinan infeksi di musim tanam berikutnya.",
-        "<a href='https://plantix.net/id/library/plant-diseases/100107/grey-leaf-spot-of-maize/'style='font-size: 20px;'>Klik untuk informasi selanjutnya</a>🍃🍃🍃"
+        "<a href='https://plantix.net/id/library/plant-diseases/100107/grey-leaf-spot-of-maize/'style='font-size: 20px; text-decoration: none;'>Klik untuk informasi selanjutnya</a>🍃🍃🍃"
     ],
     'Sehat': [
         "Tanaman jagung yang berada dalam kondisi sehat tidak menunjukkan gejala penyakit apapun. Tanaman ini tumbuh dengan baik dan memiliki warna daun yang hijau. Perawatan yang baik, termasuk pemupukan dan pengairan yang tepat, membantu menjaga kesehatan tanaman. Pengamatan teratur dan tindakan pencegahan, seperti rotasi tanaman, pemilihan varietas tahan penyakit, sanitasi lahan, dan pengelolaan air yang baik, adalah kunci untuk menjaga tanaman tetap sehat dan mengurangi risiko infeksi penyakit seperti Gray Leaf Spot."
