@@ -126,6 +126,19 @@ st.markdown(html_temp, unsafe_allow_html=True)
 
 
 
+# SIDEBAR
+# Fungsi untuk mendapatkan warna teks berdasarkan tema
+def get_text_color():
+    theme = st.get_option("theme.base")
+    if theme == "dark":
+        return "color: white;"
+    elif theme == "light":
+        return "color: black;"
+    return "color: black;"  # Default
+
+# Mengambil warna teks sesuai tema
+text_color_style = get_text_color()
+
 # Sidebar
 with st.sidebar:
     selected = option_menu(
@@ -136,18 +149,21 @@ with st.sidebar:
         default_index=0,
         styles={
             "container": {"padding": "5px 10px"},
-            "icon": {"color": "white", "font-size": "15px"},
+            "icon": {"color": "text_color_style", "font-size": "15px"},
             "nav-link": {
                 "font-size": "15px",
                 "text-align": "left",
                 "margin": "0px",
-                "color": "white",
-                "--hover-color": "#eee",
+                "color": "var(--nav-link-color, text_color_style)",
+                "--hover-color": "rgba(238, 238, 238, 0.5)",
             },
-            "nav-link-selected": {"background-color": "#228B22", "color": "white"},  # Mengubah warna background dan font
+            "nav-link-selected": {
+                "background-color": "#228B22",
+                "color": "white",  # Warna teks yang dipilih
+            },
         }
     )
-
+    
 # Menampilkan text copyright
 def display_copyright():
     theme = st.get_option("theme.base")
