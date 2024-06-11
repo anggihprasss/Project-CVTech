@@ -155,7 +155,7 @@ with st.sidebar:
                 "text-align": "left",
                 "margin": "0px",
                 "color": "var(--nav-link-color, text_color_style)",
-                "--hover-color": "rgba(238, 238, 238, 0.5)",
+                "--hover-color": "rgba(0, 0, 0, 0)",
             },
             "nav-link-selected": {
                 "background-color": "#228B22",
