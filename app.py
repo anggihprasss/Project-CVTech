@@ -20,23 +20,6 @@ from streamlit_option_menu import option_menu
 # Judul Web page
 st.set_page_config(page_title="CVTech", page_icon="🌽", layout="wide")
 
-# CSS untuk menyembunyikan menu dan footer
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    footer:after {
-        content:'';
-        visibility: hidden;
-        display: block;
-        position: relative;
-        padding: 0;
-        top: 0px;
-    }
-    </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
 # Class names dan explanation
 class_names=['Blight', 'Common Rust', 'Gray Leaf Spot', 'Sehat']
 class_explanations={
