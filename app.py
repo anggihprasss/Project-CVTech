@@ -142,10 +142,10 @@ text_color_style = get_text_color()
 # Sidebar
 with st.sidebar:
     selected = option_menu(
-        menu_title="Select",
+        menu_title="Menu",
         options=["Home", "Team", "Predict"],
         icons=["house", "people", "activity"],
-        menu_icon="list-task",
+        menu_icon="grid",
         default_index=0,
         styles={
             "container": {"padding": "5px 10px"},
