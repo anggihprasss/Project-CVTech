@@ -198,7 +198,7 @@ if selected == "Home":
     st.markdown("""
     <h2 style="text-align: center; font-size: 32px;">Tentang Aplikasi</h2>
     <div style="text-align: center; font-size: 15px;">
-    CVTech adalah aplikasi yang menggunakan teknologi Computer Vision untuk mendeteksi penyakit pada tanaman jagung. Dengan memanfaatkan model pembelajaran machine learning, aplikasi ini dapat mengenali berbagai penyakit jagung hanya dengan menganalisis gambar daun jagung.
+    CVTech adalah aplikasi yang menggunakan teknologi Computer Vision untuk mendeteksi penyakit pada tanaman jagung. Dengan memanfaatkan AI, aplikasi ini dapat mengenali berbagai penyakit jagung hanya dengan menganalisis gambar daun jagung.
     </div>
     """, unsafe_allow_html=True)
     
