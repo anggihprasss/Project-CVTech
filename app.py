@@ -313,8 +313,7 @@ if selected == "Team":
 elif selected == "Predict":
     st.markdown("<h1 style='text-align: center;'>Sistem Prediksi Penyakit Jagung</h1>", unsafe_allow_html=True)
     file = st.file_uploader("",type=["jpg", "jpeg", "png"])
-    st.set_option('deprecation.showfileUploaderEncoding', False)
-
+    
     def import_and_predict(image_data, model):
         size = (256, 256)    
         image = ImageOps.fit(image_data, size)
